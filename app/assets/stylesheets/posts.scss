@@ -28,15 +28,7 @@ border-bottom: 3px solid #888;
 
 }
 
-div {
-	padding: 10px;
-	&.error{
-		background-color: #EF7A85;
-	}
-	&.success{
-		background-color: #73A580;
-	}
-}
+
 
 header {
 	margin: 10px;
@@ -51,4 +43,20 @@ header {
 			color: darken(#6D79DE, 30%);
 		}
 	}
+}
+
+div {
+	padding: 10px;
+	&.error{
+		background-color: #EF7A85;
+	}
+	&.success{
+		background-color: #73A580;
+	}
+}
+
+a {
+		color: #888;
+		text-decoration: none;
+
 }
