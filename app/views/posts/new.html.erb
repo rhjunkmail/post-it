@@ -1,0 +1,16 @@
+<h1>Submit a post</h1>
+<!-- We need a form for creating a post
+<form>
+<input type="text">
+<textarea></textarea>textarea>
+</form>
+-->
+
+<%= simple_form_for @post do |form| %>
+
+	<%= form.input :title %>
+	<%= form.input :body %>
+
+	<%= form.button :submit %>
+	
+<%end%>

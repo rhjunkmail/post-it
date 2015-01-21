@@ -1,0 +1,22 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+
+
+
+ <section class="posts">
+	<% @posts.each do |post|%>
+	
+		<%= link_to post_path(post.id) do %>
+			<h2><%=post.title%></h2>
+		<% end %>
+		<p><%=post.body%></p>
+		<small>Post <%= time_ago_in_words(post.created_at) %> ago.</small>
+		<p><%= link_to "Edit", edit_post_path(post) %></p>
+ 	<% end %>
+</section>
+
+<section>
+	<p><%= link_to "New Post", new_post_path %></p>
+</section>
+
